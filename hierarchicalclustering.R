@@ -14,7 +14,7 @@ library(openxlsx)
 
 #La primera variable del conjunto de datos contiene los numeros de identificacion de los encuestados y no se utilizara en el analisis de agrupaciones. 
 #Usamos la funcion de "daisy" para determinar la similitud entre las observaciones y etiquetar los resultados como d. 
-#Para las opciones dentro de la funcion "daisy", usamos metrica para especificar el calculo de la distancia. 
+#Para las opciones dentro de la funcion "daisy", usamos "metric" para especificar el calculo de la distancia. 
 #Las opciones para el calculo de la distancia incluyen "euclidiana", "manhattan" y "gower". Especificamos "gower"
 d <- daisy(myData[,2:29], metric="gower")
 d
